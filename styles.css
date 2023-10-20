@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #4e4376, #2b5876);
+    color: #000;
+    /* Set text color to black */
+    margin: 0;
+    padding: 0;
+}
+
+.task-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    max-width: 500px;
+    animation: fadeIn 1s;
+}
+
+.task-list {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    max-width: 500px;
+    animation: slideIn 1s;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #FF6347, #FF4500);
+    /* Gradient Red-Orange */
+    color: #000;
+    /* Set text color to black */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s;
+    animation: fadeIn 1s;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #FF4500, #FF3300);
+    /* Gradient Darker Red-Orange */
+    animation: pulse 0.3s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideIn 1s;
+}
+
+.priority-label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #FFD700;
+    /* Vibrant Yellow */
+    animation: fadeIn 1s;
+}
+
+.high-priority {
+    color: red;
+}
+
+medium-priority {
+    color: orange;
+}
+
+low-priority {
+    color: green;
+}
+
+.delete-button {
+    background: linear-gradient(to bottom, #FF4500, #FF0000);
+    /* Gradient Darker Red */
+    color: #000;
+    /* Set text color to black */
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: fadeIn 1s;
+}
+
+delete-button:hover {
+    background: linear-gradient(to bottom, #FF0000, #CC0000);
+    /* Gradient Darker Red */
+    animation: pulse 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
